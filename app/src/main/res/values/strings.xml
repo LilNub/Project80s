@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Shoes80s</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="phone">phone</string>
+    <string name="nama_lengkap">nama lengkap</string>
+    <string name="login_title">Welcome Back!</string>
+    <string name="regist_title">Registration!</string>
+    <string name="regist_btn">Submit</string>
+    <string name="term">i accept the license terms</string>
+    <string name="wish">Wishlist\nOf User</string>
+    <string name="coupon">Insert\nCoupon</string>
+    <string name="update_acc">Update\nAccount</string>
+    <string name="hist">Purchase\nHistory</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>
