@@ -34,7 +34,6 @@
         <activity
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps"></activity>
-        <activity android:name=".Map" />
         <activity android:name=".Wash" />
         <activity android:name=".Shop" />
         <activity android:name=".Homepage" />

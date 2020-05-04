@@ -15,5 +15,15 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="soapPage">We have the best service\nand top quality product for you.</string>
     <string name="title_activity_maps">Map</string>
+    <string name="soap">Sabun cuci sepatu dari 80s shoes treatment yang dapat membersihkan sepatu anda menjadi seperti baru lagi,cukup sedikit sabun saja dapat membersihkan sepatu anda sampai bersih.</string>
+    <string name="perfume">Parfum dari 80s shoes treatment yg mempunyai berbagai varian aroma, aroma yang membuat sepatu anda harum dan segar tahan lama.</string>
+    <string name="kit">Gak ada kerjaan? Kali ini kamu bisa mencuci sepatu kamu sendiri dengan 80s kitpack dari 80s Shoes treatment, starterpack lengkap dengan harga yang ekonomis.</string>
+    <string name="woment">Treatment yang diperuntukkan khusus alas kaki wanita seperti sandal , flatshoes dan macam macam alas kaki wanita lainnya.</string>
+    <string name="sneakert">Treatment untuk berbagai macam sneakers pria ataupun wanita dan dengan berbagai macam juga bahan dari sneaker tersebut seperti canvas,suede, dll.</string>
+    <string name="leathert">Treatment yang di khususkan bagi bahan kulit dan  treatment ini kulit dirawat sebaik mungkin menggunakan berbagai macam bahan untuk merawat  kulit. </string>
+    <string name="bag">Treatment ini khusus untuk tas berbahan canvas, membersihkan sela sela pada bagian tas yang sulit terjangkau.</string>
 </resources>
+
+

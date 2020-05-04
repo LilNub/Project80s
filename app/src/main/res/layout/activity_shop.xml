@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
     tools:context=".Shop"
     android:background="@color/bg_pal">
     <ScrollView
@@ -28,31 +29,118 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="We have the best service\nand top quality product for you."
+            android:text="@string/soapPage"
             android:layout_marginBottom="40dp"/>
         <ImageButton
-            android:id="@+id/women"
+            android:id="@+id/soap"
             android:layout_width="wrap_content"
             android:layout_height="110dp"
             android:scaleType="fitXY"
             android:background="@drawable/button_r"
             android:src="@drawable/shop_soap" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textsoap"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="#000000"
+            android:text="@string/soap"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/laysoap"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:id="@+id/add1"
+                android:background="@drawable/add_icon"/>
+            <Button
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/wish1"
+                android:background="@drawable/wish_icon" />
+        </LinearLayout>
+
         <ImageButton
-            android:id="@+id/sneakers"
+            android:id="@+id/perf"
             android:layout_width="wrap_content"
             android:layout_height="110dp"
             android:scaleType="fitXY"
             android:layout_marginTop="30dp"
             android:background="@drawable/button_r"
             android:src="@drawable/shop_perfume" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textperfume"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="#000000"
+            android:text="@string/perfume"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layperf"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:id="@+id/add2"
+                android:background="@drawable/add_icon"/>
+            <Button
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/wish2"
+                android:background="@drawable/wish_icon" />
+        </LinearLayout>
+
         <ImageButton
-            android:id="@+id/gentle"
+            android:id="@+id/kit"
             android:layout_width="wrap_content"
             android:layout_height="110dp"
             android:scaleType="fitXY"
             android:layout_marginTop="30dp"
             android:background="@drawable/button_r"
             android:src="@drawable/shop_starterpack" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/textkit"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:textColor="#000000"
+            android:text="@string/kit"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/laykit"
+            android:layout_marginTop="10dp">
+            <Button
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:id="@+id/add3"
+                android:background="@drawable/add_icon"/>
+            <Button
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/wish3"
+                android:background="@drawable/wish_icon" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
     </LinearLayout>
+
     </ScrollView>
 </LinearLayout>
