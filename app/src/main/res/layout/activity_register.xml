@@ -92,7 +92,7 @@
         android:layout_marginTop="12dp"
         android:backgroundTint="#ffffff"
         android:ems="10"
-        android:hint="@string/nama_lengkap"
+        android:hint="@string/email"
         android:inputType="textPersonName"
         android:textColor="@color/textColor"
         android:textColorHint="@color/textColor"
@@ -100,5 +100,18 @@
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textReg" />
+
+    <ProgressBar
+        android:id="@+id/progg"
+        android:indeterminateTint="@color/white"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.386" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,7 +14,10 @@ import android.widget.FrameLayout;
 import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.synnapps.carouselview.CarouselView;
 import com.synnapps.carouselview.CirclePageIndicator;
 import com.synnapps.carouselview.ImageListener;
@@ -28,6 +31,9 @@ import com.synnapps.carouselview.ImageListener;
 public class HomeFragment extends Fragment {
     int[] imagesShoes = {R.drawable.cv6,R.drawable.cv7,R.drawable.cv8};
     int[] imagesShoes_test = {R.drawable.cv1,R.drawable.cv2,R.drawable.cv3,R.drawable.cv4,R.drawable.cv5};
+    FirebaseAuth firebaseAuth;
+    FirebaseUser firebaseUser;
+    TextView logout;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -66,6 +72,7 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     ImageListener imageListener = new ImageListener() {
@@ -89,6 +96,17 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
 
         View rootView =  inflater.inflate(R.layout.fragment_home, container, false);
+        logout = rootView.findViewById(R.id.logout);
+        firebaseAuth =firebaseAuth.getInstance();
+        firebaseUser = firebaseAuth.getCurrentUser();
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                Intent intent = new Intent(v.getContext(),Login.class);
+                startActivity(intent);
+            }
+        });
         Button shop = rootView.findViewById(R.id.shop);
         shop.setOnClickListener(new View.OnClickListener() {
             @Override

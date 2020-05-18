@@ -3,7 +3,7 @@
     <string name="username">username</string>
     <string name="password">password</string>
     <string name="phone">phone</string>
-    <string name="nama_lengkap">nama lengkap</string>
+    <string name="email">email</string>
     <string name="login_title">Welcome Back!</string>
     <string name="regist_title">Registration!</string>
     <string name="regist_btn">Submit</string>
