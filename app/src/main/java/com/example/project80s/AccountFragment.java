@@ -1,5 +1,6 @@
 package com.example.project80s;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 
 /**
@@ -59,6 +61,12 @@ public class AccountFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_account, container, false);
+        View rootView =  inflater.inflate(R.layout.fragment_account, container, false);
+        Button b1 = rootView.findViewById(R.id.button1);
+        b1.setOnClickListener(v -> {
+            Intent a = new Intent(getActivity(), MyListData.class);
+            startActivity(a);
+        });
+        return rootView;
     }
 }

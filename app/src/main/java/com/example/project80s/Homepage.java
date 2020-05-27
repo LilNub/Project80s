@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.app.FragmentManager;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
@@ -40,20 +42,18 @@ BottomNavigationView bottomNavigation;
     }
 
     BottomNavigationView.OnNavigationItemSelectedListener navigationItemSelectedListener =
-            new BottomNavigationView.OnNavigationItemSelectedListener() {
-                @Override public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
-                        case R.id.navigation_home:
-                            openFragment(HomeFragment.newInstance("", ""));
-                            return true;
-                        case R.id.navigation_sms:
-                            openFragment(OrderFragment.newInstance("", ""));
-                            return true;
-                        case R.id.navigation_notifications:
-                            openFragment(AccountFragment.newInstance("", ""));
-                            return true;
-                    }
-                    return false;
+            item -> {
+                switch (item.getItemId()) {
+                    case R.id.navigation_home:
+                        openFragment(HomeFragment.newInstance("", ""));
+                        return true;
+                    case R.id.navigation_sms:
+                        openFragment(OrderFragment.newInstance("", ""));
+                        return true;
+                    case R.id.navigation_notifications:
+                        openFragment(AccountFragment.newInstance("", ""));
+                        return true;
                 }
+                return false;
             };
 }

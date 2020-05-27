@@ -53,15 +53,10 @@
             android:layout_height="match_parent"
             android:id="@+id/laysoap"
             android:layout_marginTop="10dp">
+
             <Button
                 android:layout_width="100px"
                 android:layout_height="100px"
-                android:id="@+id/add1"
-                android:background="@drawable/add_icon"/>
-            <Button
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:layout_marginLeft="20dp"
                 android:id="@+id/wish1"
                 android:background="@drawable/wish_icon" />
         </LinearLayout>
@@ -89,15 +84,10 @@
             android:layout_height="match_parent"
             android:id="@+id/layperf"
             android:layout_marginTop="10dp">
+
             <Button
                 android:layout_width="100px"
                 android:layout_height="100px"
-                android:id="@+id/add2"
-                android:background="@drawable/add_icon"/>
-            <Button
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:layout_marginLeft="20dp"
                 android:id="@+id/wish2"
                 android:background="@drawable/wish_icon" />
         </LinearLayout>
@@ -125,15 +115,10 @@
             android:layout_height="match_parent"
             android:id="@+id/laykit"
             android:layout_marginTop="10dp">
+
             <Button
                 android:layout_width="100px"
                 android:layout_height="100px"
-                android:id="@+id/add3"
-                android:background="@drawable/add_icon"/>
-            <Button
-                android:layout_width="100px"
-                android:layout_height="100px"
-                android:layout_marginLeft="20dp"
                 android:id="@+id/wish3"
                 android:background="@drawable/wish_icon" />
         </LinearLayout>

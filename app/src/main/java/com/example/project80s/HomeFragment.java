@@ -132,8 +132,8 @@ public class HomeFragment extends Fragment {
             }
         });
 
-        CarouselView carouselView = (CarouselView)rootView.findViewById(R.id.carouselView);
-        CirclePageIndicator indicator = (CirclePageIndicator) carouselView.findViewById(R.id.indicator);
+        CarouselView carouselView = rootView.findViewById(R.id.carouselView);
+        CirclePageIndicator indicator = carouselView.findViewById(R.id.indicator);
         if(indicator !=null){
             indicator.setVisibility(View.GONE);
         }

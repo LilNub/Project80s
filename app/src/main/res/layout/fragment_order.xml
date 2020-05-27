@@ -1,28 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OrderFragment"
-    android:background="@color/bg_pal">
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="20dp">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="No Order"
-            android:textSize="30dp"
-            android:gravity="center"
-            android:textColor="#000000"
-            android:textStyle="bold"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:text="You haven't bought \ngoods or services at all"/>
-    </LinearLayout>
+    android:background="@color/white"
+    android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:layout_marginTop="100dp"
+       android:id="@+id/head">
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="100dp"
+       android:src="@drawable/sad"
+       android:id="@+id/sad"/>
+   </LinearLayout>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/head"
+      android:orientation="vertical">
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Sorry, U haven't ordered yet"
+         android:textColor="#000000"
+         android:paddingLeft="40dp"
+         android:paddingRight="40dp"
+         android:gravity="center"
+         android:paddingTop="30dp"
+         android:textStyle="bold"
+         android:fontFamily="sans-serif-medium"
+         android:textSize="50dp"/>
 
-</LinearLayout>
+  </LinearLayout>
+
+</RelativeLayout>
