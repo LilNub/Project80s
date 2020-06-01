@@ -3,6 +3,7 @@ package com.example.project80s;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.Parcelable;
@@ -19,6 +20,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -54,12 +56,18 @@ public class MyListData extends AppCompatActivity {
         activity = this;
         auth = FirebaseAuth.getInstance();
         listView = findViewById(R.id.ListView);
-    mRef = FirebaseDatabase.getInstance().getReference()
-            .child("Admin").child(auth.getUid()).child("Order_Shop");
+        try {
+            mRef = FirebaseDatabase.getInstance().getReference()
+                    .child("Admin").child(auth.getUid()).child("Order_Shop");
+            progressBar = findViewById(R.id.progressBar2);
+            progressBar.setVisibility(View.VISIBLE);
+            getDataValue();
+        }catch (NullPointerException e){
+            Intent a = new Intent(MyListData.this, Login.class);
+            startActivity(a);
+            Toast.makeText(MyListData.this, "Login First", Toast.LENGTH_LONG).show();
+        }
 
-         progressBar = findViewById(R.id.progressBar2);
-        progressBar.setVisibility(View.VISIBLE);
-        getDataValue();
     }
 
     private void getDataValue() {

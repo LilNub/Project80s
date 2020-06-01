@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Coupon">
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/head">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coupon"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:paddingLeft="10dp"/>
+</LinearLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kupon1"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/head">
+        <ImageView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/kupon1"
+            android:id="@+id/kupon1_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kupon1_img"
+            android:text="Expired 10/10/2020"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+    </RelativeLayout>
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/kupon2"
+       android:layout_below="@id/kupon1">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:paddingLeft="20dp"
+           android:paddingRight="20dp"
+           android:layout_height="110dp"
+           android:scaleType="fitXY"
+           android:layout_marginTop="20dp"
+           android:src="@drawable/kupon2"
+           android:id="@+id/kupon2_img"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/kupon2_img"
+           android:text="Expired 15/10/2020"
+           android:paddingLeft="20dp"
+           android:paddingRight="20dp"/>
+   </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kupon3"
+        android:layout_below="@id/kupon2">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_height="110dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/kupon3"
+            android:id="@+id/kupon3_img"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/kupon3_img"
+            android:text="Expired 11/10/2020"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"/>
+    </RelativeLayout>
+    <RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/kupon4"
+    android:layout_below="@id/kupon3">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/kupon4"
+        android:id="@+id/kupon4_img"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kupon4_img"
+        android:text="Expired 21/10/2020"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"/>
+</RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+

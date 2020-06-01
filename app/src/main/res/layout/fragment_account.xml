@@ -97,7 +97,7 @@
            <Button
                android:textAllCaps="false"
                android:id="@+id/button4"
-               android:text="@string/update_acc"
+               android:text="@string/logout"
                android:textColor="#FFFFFFFF"
                android:textSize="20dp"
                android:textAlignment="textStart"

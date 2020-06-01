@@ -10,7 +10,7 @@
     <string name="term">i accept the license terms</string>
     <string name="wish">Wishlist\nOf User</string>
     <string name="coupon">Insert\nCoupon</string>
-    <string name="update_acc">Update\nAccount</string>
+    <string name="logout">Logout\nAccount</string>
     <string name="hist">Purchase\nHistory</string>
 
     <!-- TODO: Remove or change this placeholder text -->

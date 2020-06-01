@@ -36,6 +36,7 @@
         <activity android:name=".Shop" />
         <activity android:name=".Homepage" />
         <activity android:name=".Register" />
+        <activity android:name=".Coupon"/>
         <activity
             android:name=".Login"
             android:theme="@style/SplashTheme">

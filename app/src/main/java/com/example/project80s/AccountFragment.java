@@ -4,11 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 
 /**
@@ -25,6 +29,7 @@ public class AccountFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    Button logout,hist,coupon;
 
     public AccountFragment() {
         // Required empty public constructor
@@ -57,6 +62,14 @@ public class AccountFragment extends Fragment {
         }
     }
 
+    public void openFragment(Fragment fragment) {
+
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
+    }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -67,6 +80,21 @@ public class AccountFragment extends Fragment {
             Intent a = new Intent(getActivity(), MyListData.class);
             startActivity(a);
         });
+        logout = rootView.findViewById(R.id.button4);
+                logout.setOnClickListener(v -> {
+                    FirebaseAuth.getInstance().signOut();
+                    Intent intent = new Intent(v.getContext(),Login.class);
+                    startActivity(intent);
+                });
+                hist = rootView.findViewById(R.id.button3);
+                hist.setOnClickListener(v -> {
+                    openFragment(OrderFragment.newInstance("", ""));
+                });
+                coupon = rootView.findViewById(R.id.button2);
+                coupon.setOnClickListener(v -> {
+                    Intent a = new Intent(v.getContext(), Coupon.class);
+                    startActivity(a);
+                });
         return rootView;
     }
 }
