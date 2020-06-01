@@ -74,19 +74,9 @@ public class HomeFragment extends Fragment {
 
     }
 
-    ImageListener imageListener = new ImageListener() {
-        @Override
-        public void setImageForPosition(int position, ImageView imageView) {
-            imageView.setImageResource(imagesShoes[position]);
-        }
-    };
+    ImageListener imageListener = (position, imageView) -> imageView.setImageResource(imagesShoes[position]);
 
-    ImageListener imageListener2 = new ImageListener() {
-        @Override
-        public void setImageForPosition(int position, ImageView imageView2) {
-            imageView2.setImageResource(imagesShoes_test[position]);
-        }
-    };
+    ImageListener imageListener2 = (position, imageView2) -> imageView2.setImageResource(imagesShoes_test[position]);
 
 
     @Override
@@ -99,28 +89,19 @@ public class HomeFragment extends Fragment {
         firebaseUser = firebaseAuth.getCurrentUser();
 
         Button shop = rootView.findViewById(R.id.shop);
-        shop.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent shop = new Intent(v.getContext(), Shop.class);
-                startActivity(shop);
-            }
+        shop.setOnClickListener(v -> {
+            Intent shop1 = new Intent(v.getContext(), Shop.class);
+            startActivity(shop1);
         });
         Button wash = rootView.findViewById(R.id.wash);
-        wash.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent wash = new Intent(v.getContext(), Wash.class);
-                startActivity(wash);
-            }
+        wash.setOnClickListener(v -> {
+            Intent wash1 = new Intent(v.getContext(), Wash.class);
+            startActivity(wash1);
         });
         Button map = rootView.findViewById(R.id.location);
-        map.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent map = new Intent(v.getContext(), MapsActivity.class);
-                startActivity(map);
-            }
+        map.setOnClickListener(v -> {
+            Intent map1 = new Intent(v.getContext(), MapsActivity.class);
+            startActivity(map1);
         });
 
         CarouselView carouselView = rootView.findViewById(R.id.carouselView);

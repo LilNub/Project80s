@@ -47,4 +47,5 @@ public class Data_Order {
         this.jenis = jenis;
         this.harga = harga;
     }
+
 }
